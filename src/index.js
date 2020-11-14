@@ -7,6 +7,7 @@ const { urlWordExtractorRegex } = require('./utility/regex/urlWordExtractor');
 app.get('/outfits/*', async (req, res) => {
     const matchResults = urlWordExtractorRegex.exec(req.originalUrl);
     if (!matchResults) {
+        console.log(req);
         throw new Error("Could not extract url");
     }
     let word = matchResults[1];
@@ -20,6 +21,7 @@ app.get('/outfits/*', async (req, res) => {
 
 app.use((error, req, res, next) => {
     // Bad request error
+    // console.log(req);
     res.status(400)
     res.json( /* ... */ )
 })

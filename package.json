@@ -1,0 +1,25 @@
+{
+  "name": "smart-dress",
+  "version": "1.0.0",
+  "description": "GPT3 integrated outfit creator",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node ./src/utility/getDressIdeas.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Brittany-Hasty/smart-dress.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Brittany-Hasty/smart-dress/issues"
+  },
+  "homepage": "https://github.com/Brittany-Hasty/smart-dress#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-extra": "^9.0.1",
+    "openai-api": "^1.0.12"
+  }
+}

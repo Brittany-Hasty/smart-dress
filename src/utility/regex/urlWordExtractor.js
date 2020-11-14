@@ -1,2 +1,2 @@
-const urlWordExtractorRegex = /\/outfits\/(.*)/mg;
+const urlWordExtractorRegex = /\/outfits\/(.*)/;
 exports.urlWordExtractorRegex = urlWordExtractorRegex;
